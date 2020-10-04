@@ -1,0 +1,78 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "CCC",
+    "patterns": [{
+            "include": "#comments"
+        },
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#regexstrs"
+        }
+    ],
+    "repository": {
+        "keywords": {
+            "patterns": [{
+                "name": "constant.character.ccc",
+                "match": ""
+            }, {
+                "name": "keyword.control.ccc",
+                "match": "Include|Tokens|Productions|->"
+            }, {
+                "name": "constant.character.ccc",
+                "match": "\\{|\\}|;|\\(|\\)|(:=)|="
+            }, {
+                "name": "invalid.illegal.ccc",
+                "match": ""
+            }, {
+                "name": "storage.type.ccc",
+                "match": ""
+            }, {
+                "name": "entity.name.function.ccc",
+                "match": "ignore|([a-zA-Z_]+)"
+            }, {
+                "name": "constant.language.ccc",
+                "match": ""
+            }, {
+                "name": "constant.numeric.ccc",
+                "match": "(::)|,|<|>"
+            }, {
+                "name": "support.function.ccc",
+                "match": ""
+            }]
+        },
+        "strings": {
+            "name": "string.quoted.double.ccc",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [{
+                "name": "constant.character.escape.ccc",
+                "match": "\\\\."
+            }]
+        },
+        "regexstrs": {
+            "name": "string.regexp.ccc",
+            "begin": "[^a-zA-Z0-9_]'",
+            "end": "'"
+        },
+        "comments": {
+            "patterns": [{
+                    "name": "comment.block.ccc",
+                    "begin": "#\\[",
+                    "end": "\\]#"
+                },
+                {
+                    "name": "comment.line.number-sign.ccc",
+                    "begin": "##",
+                    "end": "\n"
+                }
+
+            ]
+        }
+    },
+    "scopeName": "source.ccc"
+}
