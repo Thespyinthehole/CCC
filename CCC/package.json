@@ -1,0 +1,25 @@
+{
+    "name": "ccc",
+    "displayName": "CCC",
+    "description": "Syntax highlighting for CCC",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.37.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ccc",
+            "aliases": ["CCC", "ccc"],
+            "extensions": [".ccc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ccc",
+            "scopeName": "source.ccc",
+            "path": "./syntaxes/ccc.tmLanguage.json"
+        }]
+    }
+}

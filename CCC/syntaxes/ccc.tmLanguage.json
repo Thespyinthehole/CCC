@@ -1,0 +1,53 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "ccc",
+    "patterns": [{
+            "include": "#comments"
+        },
+        {
+            "include": "#keywords"
+        }
+    ],
+    "repository": {
+        "keywords": {
+            "patterns": [{
+                "name": "keyword.control.ccc",
+                "match": "Include|Tokens|Productions"
+            }, {
+                "name": "storage.type.ccc",
+                "match": "<[a-zA-Z_]+>"
+            }, {
+                "name": "keyword.operator.ccc",
+                "match": "(:=)|(::)|=|[|]|<|>|,"
+            }, {
+                "name": "constant.character.ccc",
+                "match": "ignore"
+            }, {
+                "name": "invalid.illegal.ccc",
+                "match": ""
+            }, {
+                "name": "entity.name.function.ccc",
+                "match": "(\"(?:\\\\\"|.)*?\")|([a-zA-Z_]+)|ε"
+            }, {
+                "name": "constant.language.ccc",
+                "match": "(->)"
+            }, {
+                "name": "constant.numeric.ccc",
+                "match": "[();{}]"
+            }, {
+                "name": "support.function.ccc",
+                "match": ""
+            }]
+        },
+        "comments": {
+            "patterns": [{
+                    "name": "comment.line.number-sign.ccc",
+                    "begin": "//",
+                    "end": "\n"
+                }
+
+            ]
+        }
+    },
+    "scopeName": "source.ccc"
+}
