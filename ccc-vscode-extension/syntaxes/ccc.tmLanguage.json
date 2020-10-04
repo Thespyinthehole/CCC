@@ -24,13 +24,13 @@
                 "match": "Include|Tokens|Productions|->"
             }, {
                 "name": "constant.character.ccc",
-                "match": "\\{|\\}|;|\\(|\\)|(:=)|="
+                "match": "\\{|\\}|;|\\(|\\)|(:=)|=|\\|"
             }, {
                 "name": "invalid.illegal.ccc",
                 "match": ""
             }, {
                 "name": "storage.type.ccc",
-                "match": ""
+                "match": "<[a-zA-Z_]+>"
             }, {
                 "name": "entity.name.function.ccc",
                 "match": "ignore|([a-zA-Z_]+)"
