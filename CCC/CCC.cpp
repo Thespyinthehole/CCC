@@ -1,9 +1,9 @@
 #include "CCC/grammar.h"
 #include <fstream>
 #include <iostream>
-#define NamedPair std::pair<std::string, std::string>
-#define StrVector std::vector<std::string>
-#define ProductionPair std::pair<std::string, FullProduction>
+typedef std::pair<std::string, std::string> NamedPair;
+typedef std::vector<std::string> StrVector;
+typedef std::pair<std::string, FullProduction> ProductionPair;
 //Stores infomation needed about the token
 struct TokenData
 {
